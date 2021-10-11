@@ -1,4 +1,4 @@
-// How we communicate with the spotify API
+// How we communicate with the spotify API for login
 
 export const authEndpoint = "https://accounts.spotify.com/authorize"
 
@@ -14,5 +14,20 @@ const scopes = [
     "user-top-read",
     "user-modify-playback-state",
 ];
+
+//pulling access token out from url
+export const getTokenFromUrl = () => {
+    return window.location.hash
+        .substring(1)
+        .split('&')
+        .reduce((initial, item) => {
+            //#accessToken=mysecretkey&name=mike&
+            let parts = item.split('=')
+            initial[parts[0]] = decodeURIComponent(parts[1])
+            return initial
+        }, {})
+}
+
+
 
 export const loginUrl = `${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join("%20")}&response_type=token&show_dialog=true`
