@@ -4,6 +4,7 @@
     height: 100vh;
     color: white;
     padding: 30px;
+    overflow-y: overlay;
 }
 .body__info{
     display: flex;
@@ -15,26 +16,22 @@
 }
 .body__infoText > p{
    font-size: 14px;
-    margin-bottom: 10px;
-
 }
 .body__infoText > h2{
-font-size: 48px;
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 .body__info > img {
     height: 20vw;
     margin: 0 20px;
     box-shadow: 0 4px 60px rgba(0,0,0,0.5);
 }
-.body__songs{
-
-}
 .body__icons{
     display: flex;
     align-items: center;
 }
 .body__icons > .MuiSvgIcon-root{
-margin-right: 20px;
+    margin-right: 20px;
 }
 .body__shuffle{
     font-size: 80px !important;
@@ -48,4 +45,7 @@ margin-right: 20px;
 }
 .body__songs{
     margin: 20px -30px;
+}
+.body::-webkit-scrollbar{
+    display: none;
 }

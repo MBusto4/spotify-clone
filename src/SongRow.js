@@ -1,3 +1,4 @@
+
 import React from 'react'
 import './SongRow.css'
 
@@ -11,7 +12,6 @@ function SongRow({ track }) {
                     {track.album.name}
                 </p>
             </div>
-
         </div>
     )
 }

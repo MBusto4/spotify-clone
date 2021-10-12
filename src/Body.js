@@ -26,14 +26,12 @@ function Body({ spotify }) {
                         <PlayCircleFilledIcon className='body__shuffle' />
                         <FavoriteIcon fontSize='large' />
                         <MoreHorizIcon />
-
                     </div>
-                    {/*List Of Songs */}
-                    {discover_weekly?.tracks.items.map(song => (
-                        <SongRow track={song.track} />
-                    ))}
                 </div>
             </div>
+            {discover_weekly?.tracks.items.map(item => (
+                <SongRow track={item.track} />
+            ))}
         </div>
     )
 }
