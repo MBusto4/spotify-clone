@@ -37,7 +37,7 @@ function Footer() {
                     <Grid item>
                         <BsFillVolumeDownFill />
                     </Grid>
-                    <Grid item>
+                    <Grid item xs>
                         <Slider />
                     </Grid>
                 </Grid>
