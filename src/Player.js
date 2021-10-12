@@ -4,6 +4,7 @@ import { useDataLayerValue } from './DataLayer';
 import Sidebar from './Sidebar';
 import Footer from './Footer';
 import Body from './Body';
+import './Player.css'
 
 
 function Player({ spotify }) {
@@ -12,7 +13,7 @@ function Player({ spotify }) {
 
     return (
         <div className='player'>
-            <div className="plauer__body">
+            <div className="player__body">
                 <Sidebar />
                 <Body />
 
