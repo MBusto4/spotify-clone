@@ -5,8 +5,8 @@ import { BsFillSkipBackwardFill } from "react-icons/bs";
 import { BsFillSkipForwardFill } from "react-icons/bs";
 import { BsShuffle } from "react-icons/bs";
 import { BsArrowRepeat } from "react-icons/bs";
+import { BsMusicNoteList } from "react-icons/bs";
 import { Grid, Slider } from '@mui/material';
-import ReactSlider from 'react-slider'
 
 import { BsFillVolumeDownFill } from "react-icons/bs";
 // import Slider from '@mui/material/Slider';
@@ -32,7 +32,7 @@ function Footer() {
             <div className="footer__right">
                 <Grid container spacing={2}>
                     <Grid item>
-                        <BsPlayCircle />
+                        <BsMusicNoteList />
                     </Grid>
                     <Grid item>
                         <BsFillVolumeDownFill />
