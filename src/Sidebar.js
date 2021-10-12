@@ -4,10 +4,12 @@ import SidebarOption from './SidebarOption'
 import { BsHouseDoor } from "react-icons/bs";
 import { BsSearch } from "react-icons/bs";
 import { BsMusicNote } from "react-icons/bs";
+import { useDataLayerValue } from './DataLayer';
 
 
 
 function Sidebar() {
+    const [{ playlists }, dispatch] = useDataLayerValue()
     return (
         <div className='sideBar'>
             <img
@@ -29,15 +31,9 @@ function Sidebar() {
             <strong className='sideBar__title'>PLAYLISTS</strong>
             <hr />
 
-            <SidebarOption
-                title="Hip hop"
-            />
-            <SidebarOption
-                title="Rock"
-            />
-            <SidebarOption
-                title="Country"
-            />
+            {playlists?.items?.map(playlist => (
+                <SidebarOption title={playlist.name} />
+            ))}
         </div>
 
     )

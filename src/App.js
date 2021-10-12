@@ -37,22 +37,25 @@ function App() {
           user: user
         })
       })
+      spotify.getUserPlaylists().then((playlists) => {
+        dispatch({
+          type: "SET_PLAYLISTS",
+          playlists: playlists
+        })
+      })
     }
   }, [])
 
   // console.log('USER---->', user)
   // console.log("THE TOKEN IS----> ", token)
-
-
   return (
     <div className="app">
       {
-        token ? (
+        token ?
           //passing a prop to Player Component
           <Player spotify={spotify} />
-        ) : (
+          :
           <Login />
-        )
       }
 
     </div>
