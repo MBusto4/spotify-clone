@@ -10,6 +10,11 @@
 }
 .footer__left{
     flex: 0.3;
+    display: flex;
+    align-items: center;
+    color: white;
+    max-width: 300px;
+
 }
 .footer__center{
     flex: 0.4;
@@ -22,4 +27,24 @@
 }
 .footer__right{
     flex: 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer__albumLogo{
+    object-fit: contain;
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+}
+.footer__green{
+    color: #1ed15e;
+}
+.footer__songInfo > p{
+    font-size: 12px;
+}
+.footer__songInfo > h4{
+    margin-bottom: 5px;
 }

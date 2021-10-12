@@ -5,12 +5,20 @@ import { BsFillSkipBackwardFill } from "react-icons/bs";
 import { BsFillSkipForwardFill } from "react-icons/bs";
 import { BsShuffle } from "react-icons/bs";
 import { BsArrowRepeat } from "react-icons/bs";
+import { Grid, Slider } from '@mui/material';
+import ReactSlider from 'react-slider'
 
+import { BsFillVolumeDownFill } from "react-icons/bs";
+// import Slider from '@mui/material/Slider';
 function Footer() {
     return (
         <div className='footer'>
             <div className="footer__left">
-                <p>Album & Song Details</p>
+                <img className='footer__albumLogo' src="" alt="" />
+                <div className="footer__songInfo">
+                    <h4>No Song Playing</h4>
+                    <p>.....</p>
+                </div>
             </div>
 
             <div className="footer__center">
@@ -21,8 +29,19 @@ function Footer() {
                 <BsArrowRepeat className='footer__green' />
             </div>
 
-            <div className="footer_right">
-                <p>Volume Controls</p>
+            <div className="footer__right">
+                <Grid container spacing={2}>
+                    <Grid item>
+                        <BsPlayCircle />
+                    </Grid>
+                    <Grid item>
+                        <BsFillVolumeDownFill />
+                    </Grid>
+                    <Grid item>
+                        <Slider />
+                    </Grid>
+                </Grid>
+
             </div>
         </div>
     )
