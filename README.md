@@ -17,7 +17,7 @@
 ## Technologies
 
 - Front-End
-  - React.js, React Context API, Bootstrap Icons, Material UI Icons
+  - React.js, React Context API, Bootstrap, Material UI Icons
 - Back-End
   - Firebase - NoSQL Database
 - External API/Libraries
