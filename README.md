@@ -23,6 +23,7 @@
 - External API/Libraries
   - spotify-web-api.js
   - react-audio-player.js
+  - emotion-react.js
    
 ## Future Roadmap
 
